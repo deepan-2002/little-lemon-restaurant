@@ -20,10 +20,11 @@ const TheNavbar = () => {
           </div>
           <div className='md:flex-grow'>
             <button
-              className='md:hidden px-4 py-2 border rounded text-lemonBlack border-lemonBlack'
+              className='md:hidden'
               onClick={toggleMenu}
             >
-              {isOpen ? 'Close' : 'Menu'}
+              {isOpen ? (<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeWidth={2} d="M12 19V5m6 14V5M6 19V5"></path></svg>) : 
+              (<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeWidth={2} d="M5 6h14M5 12h14M5 18h14"></path></svg>)}
             </button>
           </div>
         </div>
